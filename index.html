@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>I Love You Mikay</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -11,17 +13,19 @@
       justify-content: center;
       align-items: center;
       background: linear-gradient(135deg, #ffb6c1, #ff9a9e, #fad0c4);
-      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-family: 'Poppins', sans-serif;
       overflow: hidden;
     }
     h1 {
       font-size: 3em;
+      font-weight: 700;
       color: white;
       text-shadow: 2px 2px 15px rgba(0,0,0,0.3);
       animation: pulse 2s infinite;
       z-index: 10;
       position: absolute;
       top: 20px;
+      letter-spacing: 2px;
     }
     @keyframes pulse {
       0%, 100% { transform: scale(1); }
@@ -39,8 +43,8 @@
     }
     .note {
       font-size: 1.5em;
+      font-weight: 700;
       color: white;
-      font-weight: bold;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     }
     .float-img {
@@ -56,7 +60,7 @@
       bottom: 20px;
       padding: 12px 25px;
       font-size: 1.2em;
-      font-weight: bold;
+      font-weight: 700;
       background: white;
       color: #ff4d6d;
       border: none;
@@ -65,6 +69,7 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       transition: transform 0.2s, background 0.3s;
       z-index: 20;
+      font-family: 'Poppins', sans-serif;
     }
     #loveButton:hover {
       transform: scale(1.1);
@@ -98,7 +103,6 @@
         item.innerText = customText;
         item.classList.add("note");
       } 
-      // Higher chance for ILOVEYOU + BISAN
       else if (rand < 0.5) {
         item.innerText = specialNotes[Math.floor(Math.random() * specialNotes.length)];
         item.classList.add("note");
@@ -138,7 +142,3 @@
   </script>
 </body>
 </html>
-
-</html>
-
-
