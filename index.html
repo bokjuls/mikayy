@@ -1,144 +1,150 @@
+
+Julia Sancho <sanchojulia017@gmail.com>
+5:40 PM (1 minute ago)
+to julia
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>I Love You Mikay</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #ffb6c1, #ff9a9e, #fad0c4);
-      font-family: 'Poppins', sans-serif;
-      overflow: hidden;
-    }
-    h1 {
-      font-size: 3em;
-      font-weight: 700;
-      color: white;
-      text-shadow: 2px 2px 15px rgba(0,0,0,0.3);
-      animation: pulse 2s infinite;
-      z-index: 10;
-      position: absolute;
-      top: 20px;
-      letter-spacing: 2px;
-    }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
-    .floating {
-      position: absolute;
-      bottom: -100px;
-      animation: floatUp 10s linear infinite;
-      opacity: 0.9;
-    }
-    @keyframes floatUp {
-      0% { transform: translateY(0) scale(0.5); opacity: 1; }
-      100% { transform: translateY(-110vh) scale(1.5); opacity: 0; }
-    }
-    .note {
-      font-size: 1.5em;
-      font-weight: 700;
-      color: white;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    }
-    .float-img {
-      width: 90px;
-      height: 90px;
-      border-radius: 20px;
-      object-fit: cover;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-    /* Button Style */
-    #loveButton {
-      position: absolute;
-      bottom: 20px;
-      padding: 12px 25px;
-      font-size: 1.2em;
-      font-weight: 700;
-      background: white;
-      color: #ff4d6d;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.2s, background 0.3s;
-      z-index: 20;
-      font-family: 'Poppins', sans-serif;
-    }
-    #loveButton:hover {
-      transform: scale(1.1);
-      background: #ffe6eb;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>I Love You Mikay</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<style>
+body {
+margin: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #ffb6c1, #ff9a9e, #fad0c4);
+font-family: 'Poppins', sans-serif;
+overflow: hidden;
+}
+h1 {
+font-size: 3em;
+font-weight: 700;
+color: white;
+text-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+animation: pulse 2s infinite;
+z-index: 10;
+position: absolute;
+top: 20px;
+letter-spacing: 2px;
+}
+@keyframes pulse {
+0%, 100% { transform: scale(1); }
+50% { transform: scale(1.2); }
+}
+.floating {
+position: absolute;
+bottom: -100px;
+animation: floatUp 10s linear infinite;
+opacity: 0.9;
+}
+@keyframes floatUp {
+0% { transform: translateY(0) scale(0.5); opacity: 1; }
+100% { transform: translateY(-110vh) scale(1.5); opacity: 0; }
+}
+.note {
+font-size: 1.5em;
+font-weight: 700;
+color: white;
+text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+font-family: 'Poppins', sans-serif; /* ✅ FIXED */
+}
+.float-img {
+width: 90px;
+height: 90px;
+border-radius: 20px;
+object-fit: cover;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+/* Button Style */
+#loveButton {
+position: absolute;
+bottom: 20px;
+padding: 12px 25px;
+font-size: 1.2em;
+font-weight: 700;
+background: white;
+color: #ff4d6d;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+transition: transform 0.2s, background 0.3s;
+z-index: 20;
+font-family: 'Poppins', sans-serif;
+}
+#loveButton:hover {
+transform: scale(1.1);
+background: #ffe6eb;
+}
+</style>
 </head>
 <body>
-  <h1>I LOVE YOU MIKAY ❤️🌸</h1>
+<h1>I LOVE YOU MIKAY ❤️🌸</h1>
 
-  <!-- Button -->
-  <button id="loveButton">Click Here</button>
+<!-- Button -->
+<button id="loveButton">Click Here</button>
 
-  <script>
-    const emojis = ["❤️","💖","💕","🌸","🌹","💐"];
-    const specialNotes = [
-      "I LOVE YOU ❤️",
-      "BISAN NON CHALANT AKO LOVE TAKA 💕"
-    ];
-    const otherNotes = [
-      "MIKAY 🌸"
-    ];
-    const images = ["PIC.jpg"]; // Add your pictures here
+<script>
+const emojis = ["❤️","💖","💕","🌸","🌹","💐"];
+const specialNotes = [
+"I LOVE YOU ❤️",
+"BISAN NON CHALANT AKO LOVE TAKA 💕"
+];
+const otherNotes = [
+"MIKAY 🌸"
+];
+const images = ["PIC.jpg"]; // Add your pictures here
 
-    function createFloating(customText = null) {
-      const rand = Math.random();
-      const item = document.createElement("div");
-      item.classList.add("floating");
+function createFloating(customText = null) {
+const rand = Math.random();
+const item = document.createElement("div");
+item.classList.add("floating");
 
-      if (customText) {
-        item.innerText = customText;
-        item.classList.add("note");
-      } 
-      else if (rand < 0.5) {
-        item.innerText = specialNotes[Math.floor(Math.random() * specialNotes.length)];
-        item.classList.add("note");
-      } 
-      else if (rand < 0.7 && images.length > 0) {
-        const img = document.createElement("img");
-        img.src = images[Math.floor(Math.random() * images.length)];
-        img.classList.add("float-img");
-        item.appendChild(img);
-      } else if (rand < 0.9) {
-        item.innerText = otherNotes[Math.floor(Math.random() * otherNotes.length)];
-        item.classList.add("note");
-      } else {
-        item.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-        item.style.fontSize = (1.5 + Math.random() * 2) + "em";
-      }
+if (customText) {
+item.innerText = customText;
+item.classList.add("note");
+}
+else if (rand < 0.5) {
+item.innerText = specialNotes[Math.floor(Math.random() * specialNotes.length)];
+item.classList.add("note");
+}
+else if (rand < 0.7 && images.length > 0) {
+const img = document.createElement("img");
+img.src = images[Math.floor(Math.random() * images.length)];
+img.classList.add("float-img");
+item.appendChild(img);
+} else if (rand < 0.9) {
+item.innerText = otherNotes[Math.floor(Math.random() * otherNotes.length)];
+item.classList.add("note");
+} else {
+item.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+item.style.fontSize = (1.5 + Math.random() * 2) + "em";
+}
 
-      item.style.left = Math.random() * 100 + "vw";
-      item.style.animationDuration = (5 + Math.random() * 5) + "s";
-      document.body.appendChild(item);
+item.style.left = Math.random() * 100 + "vw";
+item.style.animationDuration = (5 + Math.random() * 5) + "s";
+document.body.appendChild(item);
 
-      setTimeout(() => item.remove(), 10000);
-    }
+setTimeout(() => item.remove(), 10000);
+}
 
-    // Floating items appear automatically
-    setInterval(createFloating, 600);
+// Floating items appear automatically
+setInterval(createFloating, 600);
 
-    // When button clicked → burst of BOTH messages
-    document.getElementById("loveButton").addEventListener("click", () => {
-      for (let i = 0; i < 15; i++) {
-        setTimeout(() => {
-          const msg = specialNotes[Math.floor(Math.random() * specialNotes.length)];
-          createFloating(msg);
-        }, i * 200);
-      }
-    });
-  </script>
+// When button clicked → burst of BOTH messages
+document.getElementById("loveButton").addEventListener("click", () => {
+for (let i = 0; i < 15; i++) {
+setTimeout(() => {
+const msg = specialNotes[Math.floor(Math.random() * specialNotes.length)];
+createFloating(msg);
+}, i * 200);
+}
+});
+</script>
 </body>
 </html>
